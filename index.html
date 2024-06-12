@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- firebase 관련 서비스 추가 -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>멤버등록</h1>
+    
+    <form action="#" name="frm">
+        <table border="1">
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="id"></td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>닉네임</td>
+                <td><input type="text" name="nick"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value=등록 name="btn">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <h1>멤버 조회</h1>
+    <button id="readBtn">조회</button>
+    <div id="result"></div>
+
+    <hr>
+
+    <h1>멤버 1명 조회</h1>
+    <form action="#" name="oneFrm">
+        아이디를 입력하세요 <br> <input type="text" name="oneId">
+        <input type="submit" name="oneBtn" value="조회">
+    </form>
+    <div id="resultOne"></div>
+
+    <script src="./firebase.js"></script>
+</body>
+</html>
